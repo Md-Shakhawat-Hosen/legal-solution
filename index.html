@@ -7,12 +7,19 @@
     <title>Law Solution</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/4ad39c9065.js" crossorigin="anonymous"></script>
+
  <script>
     tailwind.config = {
       theme: {
         extend: {
-          colors: {
-            clifford: '#da373d',
+          backgroundImage: {
+            'law-background': "url('./images/banner.png')",
           }
         }
       }
@@ -20,11 +27,56 @@
   </script>
 
   <style>
-
+      .text-poppins{
+       
+          font-family: 'Poppins', sans-serif;
+      }
+      .text-gramond{
+          font-family: 'EB Garamond', serif;
+      }
+      .back{
+        background-image: url('./images/banner.png');
+        height: 550px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 8px;
+      }
   </style>
   
 </head>
 <body>
+     <!-- Header section start from here -->
+       <header class="max-w-screen-xl py-11 px-10 mx-auto">
+        <!-- Navbar section start from here -->
+            <nav class="flex flex-col lg:flex-row items-center justify-between">
+                <div class="flex">
+                  <img class="" src="./images/logo2.png" alt="">
+                </div>
+               <ul class="flex flex-col lg:flex-row gap-8 my-10 lg:my-0">
+                <li><a href="">Home</a></li>
+                <li><a class="flex items-center gap-2" href="">Services <i class="fa-solid fa-greater-than"></i></a></li>
+                <li><a class="flex items-center gap-2" href="">Cases <i class="fa-solid fa-greater-than"></i></a></li>
+                <li><a class="flex items-center gap-2" href="">Blog <i class="fa-solid fa-greater-than"></i></a></li>
+                <li><a class="flex items-center gap-2" href="">Contact Us <i class="fa-solid fa-greater-than"></i></a></li>
+               </ul>
+               <div>
+                   <h3 class="bg-[#B68C5A] px-7 py-5 rounded-lg text-white">Free Consultation</h3>
+               </div>
+            </nav>
+        <!-- Navbar section end here -->
+
+        <!-- Banner section start from here   -->
+               <div class="back flex items-center mt-16 mb-28">
+                 <div class="text-center lg:w-3/5 mx-auto space-y-5">
+                   <h1 class="text-white text-3xl  lg:text-7xl font-bold text-gramond">We Provide Effective Legal Solutions</h1>
+                   <p class="text-white text-poppins">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <input class="border-4 lg:w-4/5 px-4 py-2 rounded-lg" type="search" name="" placeholder="Search your services" id="">
+                    <button class="py-3 px-10 bg-[#B68C5A] text-white rounded-lg">Search</button>
+                 </div>
+               </div>
+        <!-- Banner section end here  -->
+       </header>
+     <!-- Header section end here -->
     
 </body>
 </html>
